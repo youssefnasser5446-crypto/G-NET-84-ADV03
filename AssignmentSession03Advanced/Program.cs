@@ -107,6 +107,62 @@ namespace AssignmentSession03Advanced
 
 
             #endregion
+
+            #region Question03
+
+            ////1. Create a Collection  with 4 contacts (name → phone number)
+            //Dictionary<string, string> person = new Dictionary<string, string>()
+            //{
+            //    ["Ahmed"] = "01011112222",
+            //    ["Sara"] = "01022223333",
+            //    ["Ali"] = "01033334444",
+            //    ["Mona"] = "01044445555"
+            //};
+
+            ////2. Add a new contact using [] syntax (add or update)
+
+            //person["Yousef"] = "01101531445";
+
+            ////3. Try adding a duplicate using .Add() — catch the exception and print the error
+            //Console.WriteLine("Try adding a duplicate using .Add() ===============================");
+            //try { 
+            //person.Add("Mona", "01015656681");
+            //} 
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            ////4. Try adding a duplicate using .TryAdd() — print whether it succeeded 
+            //Console.WriteLine("Try adding a duplicate using .TryAdd()===============================");
+            //if (person.TryAdd("Mona", "01041555555"))  
+                
+            //    Console.WriteLine("Added Successfully");
+            
+            //else
+            //    Console.WriteLine("Not Added");
+
+            ////5. Search for a contact that doesn’t exist
+            //Console.WriteLine("5. Search for a contact that doesn’t exist=============================");
+
+            //Console.WriteLine($"contact number is : {person.ContainsKey("zaid")}");
+
+            //// 6. Get a contact with a fallback of "Not Found" 
+            //Console.WriteLine("Get a contact============================================ ");
+
+            //string res = person.GetValueOrDefault("Mostafa") ?? "Not Found";
+
+            //   Console.WriteLine(res);
+           
+
+            ////7. Print all Keys on one line, then all Values on another line 
+            //Console.WriteLine("All keys=================");
+            //Console.WriteLine(string.Join(',',person.Keys));
+            //Console.WriteLine("All Values =================================================");
+
+            //Console.WriteLine(string.Join(',', person.Values));
+
+
+            #endregion
         }
     }
 }
