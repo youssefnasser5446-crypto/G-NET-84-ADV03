@@ -135,9 +135,9 @@ namespace AssignmentSession03Advanced
             ////4. Try adding a duplicate using .TryAdd() — print whether it succeeded 
             //Console.WriteLine("Try adding a duplicate using .TryAdd()===============================");
             //if (person.TryAdd("Mona", "01041555555"))  
-                
+
             //    Console.WriteLine("Added Successfully");
-            
+
             //else
             //    Console.WriteLine("Not Added");
 
@@ -152,7 +152,7 @@ namespace AssignmentSession03Advanced
             //string res = person.GetValueOrDefault("Mostafa") ?? "Not Found";
 
             //   Console.WriteLine(res);
-           
+
 
             ////7. Print all Keys on one line, then all Values on another line 
             //Console.WriteLine("All keys=================");
@@ -161,6 +161,55 @@ namespace AssignmentSession03Advanced
 
             //Console.WriteLine(string.Join(',', person.Values));
 
+
+            #endregion
+
+            #region Question04
+
+            ////1. Create a HashSet<string> with a case-insensitive comparer: new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            ////2. Add these emails: "ahmed@test.com", "AHMED@test.com", "sara@test.com", "sara@test.com"
+
+            //HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            //{
+            //     "ahmed@test.com",
+            //    "AHMED@test.com",
+            //    "sara@test.com",
+            //    "Sara@Test.Com"
+            //};
+
+            ////3. Print Count — how many are actually stored? Explain why. 
+            //Console.WriteLine("count is ===================================");
+            //// 3. Print Count — how many are actually stored? Explain why. 
+            //Console.WriteLine("Count is: " + emails.Count);// 2 => Because it removes duplicate elements and ignores case sensitivity.
+            //Console.WriteLine("Explanation: Only 2 are stored because HashSet removes duplicates," +
+            //    " and StringComparer.OrdinalIgnoreCase made it treat uppercase and lowercase emails as identical.");
+
+            ////4. Create two sets: Set A = {1,2,3,4,5} and Set B = {4,5,6,7,8} 
+            //HashSet<int> A = [1, 2, 3, 4, 5];
+            //HashSet<int> B = [4, 5, 6, 7, 8];
+
+            ////5. Print the result of: UnionWith, IntersectWith, ExceptWith
+
+            //Console.WriteLine(" UnionWith==============");
+            //HashSet<int> union = new(A);
+            //union.UnionWith(B);
+            //Console.WriteLine(string.Join(',', union));
+
+            //Console.WriteLine(" IntersectWith==============");
+            //HashSet<int> intersect = new(A);
+            //intersect.IntersectWith(B);
+            //Console.WriteLine(string.Join(',', intersect));
+
+            //Console.WriteLine(" ExceptWith==============");
+            //HashSet<int> Except = new(A);
+            //Except.ExceptWith(B);
+            //Console.WriteLine(string.Join(',', Except));
+
+            ////6. Use IsSubsetOf to check if {1,2} is a subset of Set A 
+
+            //Console.WriteLine(" IsSubsetOf==============");
+            //HashSet<int> sub = [1, 2];
+            //Console.WriteLine(sub.IsSubsetOf(A));
 
             #endregion
         }
