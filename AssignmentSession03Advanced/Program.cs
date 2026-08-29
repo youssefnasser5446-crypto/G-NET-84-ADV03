@@ -1,5 +1,7 @@
 ﻿
+using System.Collections.Concurrent;
 using System.Diagnostics;
+using static System.Formats.Asn1.AsnWriter;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AssignmentSession03Advanced
@@ -55,6 +57,53 @@ namespace AssignmentSession03Advanced
             //    strGrade.Add($"Grade: {item}");
             //}
             //Console.WriteLine(string.Join(',', strGrade));
+            #endregion
+
+            #region Question02
+
+            ////1. Add: 500="Ahmed", 200="Sara", 800="Ali", 350="Mona" 
+            //SortedDictionary<int, string> player = new SortedDictionary<int, string>()
+            //{
+            //    [500] = "Ahmed",
+            //    [200] = "Sara",
+            //    [800] = "Ali",
+            //    [350] = "Mona"
+            //};
+
+            ////2.Print all entries(they should be sorted by score automatically)
+            //Console.WriteLine("all entries======================");
+            
+            //foreach (var (key,value) in player)
+            //{
+            //    Console.WriteLine($"{key} : {value}"); 
+            //}
+
+            ////3. Access the first key and first value 
+            //Console.WriteLine("first key and first value==========================");
+            //Console.WriteLine($"first key : {player.First().Key}");
+            //Console.WriteLine($"first Value : {player.First().Value}");
+
+            ////4. Check if score 500 exists
+            //Console.WriteLine("Check if score 500 exists ? ========================================");
+            //Console.WriteLine($"contains 500 ? {player.ContainsKey(500)}");
+
+            ////5. Safely get the player with score 999 
+            //Console.WriteLine("player with score 999 ===========================================");
+            //if (player.TryGetValue(999, out string? result))
+            //{
+            //    Console.WriteLine(result);
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("not found");
+            //}
+            ////6. Remove the player with score 200 and print the updated list 
+            //Console.WriteLine("Remove the player with score 200===================");
+            //player.Remove(200);
+            //foreach (var (key,value) in player)
+            //{
+            //    Console.WriteLine($"{key} : {value}");  
+            //}
             #endregion
         }
     }
